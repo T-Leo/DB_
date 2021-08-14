@@ -1,0 +1,8 @@
+    Создайте базу данных example, разместите в ней таблицу users, состоящую из двух столбцов, числового id и строкового name.
+
+mysql> CREATE DATABASE example;
+ERROR 1007 (HY000): Can't create database 'example'; database exists
+mysql> USE example;
+Database changed
+mysql> CREATE TABLE users (id SERIAL PRIMARY KEY, name VARCHAR(255) COMMENT 'UserName');
+Query OK, 0 rows affected (0.04 sec)
